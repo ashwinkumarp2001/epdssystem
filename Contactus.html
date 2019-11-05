@@ -1,0 +1,1047 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0031)https://dfpd.gov.in/contact.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths bgpositionxy csscalc bgsizecover boxsizing no-bgrepeatround no-bgrepeatspace cubicbezierrange no-display-runin display-table cssresize scriptasync scriptdefer"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Contact Us | Department of Food &amp; Public Distribution
+</title><meta http-equiv="Content-Style-Type" content="text/css"><meta http-equiv="Content-Script-Type" content="type"><meta name="format-detection" content="telephone=no"><meta name="referrer" content="no-referrer">
+    <!-- Start Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script async="" src="./Contactus_files/analytics.js.download"></script><script type="text/javascript" src="./Contactus_files/modernizr-custom-33193.js.download"></script>
+	
+      <script type="text/javascript" src="./Contactus_files/jquery-3.3.1.min.js.download"></script>
+	<script type="text/javascript" src="./Contactus_files/jquery-migrate-1.2.1.min.js.download"></script>
+  
+    
+
+    
+
+<!-- NewLy Added Files-->
+
+<script src="./Contactus_files/bootstrap.min.js.download"></script>
+<script src="./Contactus_files/owl.carousel.js.download"></script>
+<script src="./Contactus_files/custom.js.download"></script>
+<link rel="stylesheet" href="./Contactus_files/bootstrap.min.css"><link rel="stylesheet" href="./Contactus_files/font-awesome.min.css"><link rel="stylesheet" href="./Contactus_files/owl.carousel.css"><link rel="stylesheet" type="text/css" href="./Contactus_files/owl.theme.default.css"><link rel="stylesheet" href="./Contactus_files/style.css">
+
+
+    <!-- End newLy Added -->
+
+
+
+	
+	<!--[if lt IE 9]>
+	<link href="writereaddata/Portal/Design_CSS/2.css" rel="stylesheet" type="text/css" media="all" />
+	<![endif]-->
+
+    
+    <meta name="keywords" content="Contact Us | Department of Food &amp;amp; Public Distribution">
+    <meta name="description" content="Contact Us | Department of Food &amp;amp; Public Distribution&amp;quot;&amp;gt;">
+    <link rel="icon" id="lnkFavicon" type="image" href="https://dfpd.gov.in/1sGbO2W68mUlimgunCgKmpnLF5WHm/favicon.ico">
+    <script src="./Contactus_files/jquery-3.3.1.min.js.download" type="text/javascript"></script>
+    <script src="./Contactus_files/bootstrap.min.js.download" type="text/javascript"></script>
+    <script src="./Contactus_files/bootstrap.min.css" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            debugger;
+            if ($('#ContentPlaceHolder1_hdTimeTicker').val() != null && $('#ContentPlaceHolder1_hdTimeTicker').val() != "") {
+                var from = new Date($('#ContentPlaceHolder1_hdTimeTicker').val().split('_')[0].replace(/(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3"));
+                //var from = new Date($('#ContentPlaceHolder1_hdTimeTicker').val().split('_')[0]);    
+                var startdate = new Date(from.getFullYear(), from.getMonth(), from.getDate());
+
+                var to = new Date($('#ContentPlaceHolder1_hdTimeTicker').val().split('_')[1].replace(/(\d{2})-(\d{2})-(\d{4})/, "$2/$1/$3"));
+                var enddate = new Date(to.getFullYear(), to.getMonth(), to.getDate());
+                var dt = new Date();
+
+                var mn = parseInt(dt.getMonth()) + 1;
+                if (mn.toString().length == 1) mn = '0' + mn;
+
+                var gg = dt.getDate();
+                if (gg.toString().length == 1) gg = '0' + gg;
+
+                var dateNow = dt.getFullYear() + "/" + mn + "/" + gg;
+                try {
+                    if (parseInt($('#ContentPlaceHolder1_hdTimeTicker').val().split('_')[2]) == 3 || parseInt($('#ContentPlaceHolder1_hdTimeTicker').val().split('_')[2]) == 6) {
+                        if (startdate != undefined && startdate != null && enddate != undefined && enddate != null) {
+                            if (dateNow >= formatDate(startdate) && dateNow <= formatDate(enddate)) {
+                                jQuery('#myModal').removeClass('fade');
+                                jQuery('#myModal').show();
+                            }
+                        }
+                    }
+                }
+                catch (err) {
+                }
+            }
+            $('.close').click(function () {
+                jQuery('#myModal').addClass('fade');
+                jQuery('#myModal').hide();
+            })
+
+
+            $('.nac,.nfsa').hide();
+
+            $("#nfsa").click(function () {
+                if ($(".nfsa").is(":visible")) {
+                    $(".nfsa").hide();
+                    $(".nac").hide();
+                }
+                else {
+                    $(".nfsa").show();
+                    $(".nac").hide();
+                }
+            });
+
+            $("#nac").click(function () {
+                if ($(".nac").is(":visible")) {
+                      $(".nac").hide();
+                    $(".nfsa").hide();
+                }
+                else {
+                    $(".nac").show();
+                    $(".nfsa").hide();
+                }
+            });
+        });
+
+        function formatDate(userDate) {
+            userDate = new Date(userDate);
+            y = userDate.getFullYear().toString();
+            m = (userDate.getMonth() + 1).toString();
+            d = userDate.getDate().toString();
+            if (m.length == 1) m = '0' + m;
+            if (d.length == 1) d = '0' + d;
+
+            return y + "/" + m + "/" + d;
+        }
+        function FillDataforHTML() {
+            var k = JSON.parse($('#ContentPlaceHolder1_hdnJSON').val());
+            var ll = $('#ContentPlaceHolder1_hdnListID').val();
+            var langId = JSON.parse($('#ContentPlaceHolder1_hdnLang').val());
+            if (k != null || k != '' || k != undefined) {
+
+                $.each(k, function (i, p) {
+
+                    var html = ''
+                    html += '<table class="tableOut" border="0" cellpadding="0" cellspacing="0" width="100%">';
+                    var ord = 1;
+                    $.each(p, function (g, m) {
+
+                        if (g == 0) {
+                            html += '<thead>'
+                        }
+                        if (g == 1) {
+                            html += '<tbody>'
+                        }
+                        var cv = parseInt(m.length) - 1;
+
+                        if (m[cv] == false || g == 0) {
+
+                            html += '<tr>'
+                            $.each(m, function (n, o) {
+
+                                if (n < cv) {
+                                    if (g == 0) {
+                                        if (n == 0) {
+                                            if (langId == '1')
+                                                html += '<th>SNo.</th>'
+                                            else html += '<th>क्रमांक</th>'
+                                        }
+                                        html += '<th>' + o + '</th>'
+                                    }
+                                    else {
+                                        if (n == 0) {
+                                            html += '<td>' + ord + '</td>'
+                                            ord = ord + 1;
+                                        }
+                                        html += '<td>' + o + '</td>'
+                                    }
+                                }
+                            });
+                            html += '</tr>'
+                        }
+
+                        if (g == 0) {
+                            html += '</thead>'
+                        }
+
+                    });
+                    html += '</tbody></table>'
+                    var cd = $('#ContentPlaceHolder1_hdnAchiveCount').val();
+                    var tt = parseInt(cd.split('_')[i]);
+                    var tdt;
+                    if (tt > 0) {
+                        if (parseInt(langId) == 1) tdt = "Archive";
+                        else tdt = "पुरालेख";
+                        html += '<input type="button" text="' + tdt + '"  value="' + tdt + '" id="btnArchiveList_' + ll.split('_')[i] + "_" + langId + '" class="btnArchiveList" style="border-style:Solid;color: #fff;border: 1px solid #81a55e;background-color: #81a55e;text-decoration: none;font-size: 14px;padding: 7px 15px;width:70px;" /><br/>';
+                    }
+                    var allhtml = $('.row').html();
+                    var allreplce = allhtml.replace('#E$tab_' + (i + 1), html)
+                    $('.row').html(allreplce);
+                });
+            }
+        }
+        $(document).on('click', ".btnArchiveList", function () {
+            debugger;
+            var url = "";
+            var ListId = parseInt($(this).attr('id').split('_')[1]);
+            var LkId = parseInt($(this).attr('id').split('_')[2]);
+            if (LkId == 1) {
+                url = "ContentList_Archive.htm?lstId=" + ListId;
+            }
+            else {
+                url = "ContentList_Archive-hi.htm?lstId=" + ListId;
+            }
+            window.open(url, '_blank');
+            return false;
+        });
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imgShow').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+    <style type="text/css">
+        a:link {
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }
+    </style>
+<link href="./Contactus_files/9.css" rel="stylesheet" type="text/css" media="print"><link href="./Contactus_files/prettyPhoto-cms.css" type="text/css" rel="stylesheet"><link href="./Contactus_files/green.css" type="text/css" rel="stylesheet"></head>
+<body id="bdMainSite" class="printOuter hasJS desktopSize" style="font-size:87%">
+   <noscript class="noscriptDiv"><div id="scriptOffMsg">This page uses Javascript. Your browser either doesn't support Javascript or you have it turned off. To see this page as it is meant to appear please use a Javascript enabled browser.</div></noscript>
+    <form method="post" action="https://dfpd.gov.in/contact.htm" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4NDgwMzc1NjQPZBYCZg9kFgQCAQ9kFgICEQ9kFgYCAw8WAh4EVGV4dAVfPG1ldGEgbmFtZT0ia2V5d29yZHMiIGNvbnRlbnQ9J0NvbnRhY3QgVXMgfCBEZXBhcnRtZW50IG9mIEZvb2QgJmFtcDthbXA7IFB1YmxpYyBEaXN0cmlidXRpb24nLz5kAgUPFgIfAAV0PG1ldGEgbmFtZT0iZGVzY3JpcHRpb24iIGNvbnRlbnQ9J0NvbnRhY3QgVXMgfCBEZXBhcnRtZW50IG9mIEZvb2QgJmFtcDthbXA7IFB1YmxpYyBEaXN0cmlidXRpb24mYW1wO3F1b3Q7JmFtcDtndDsnLz5kAgcPFgIfAAVhPGxpbmsgcmVsPSJpY29uIiBpZD0ibG5rRmF2aWNvbiIgdHlwZT0iaW1hZ2UiIGhyZWY9IjFzR2JPMlc2OG1VbGltZ3VuQ2dLbXBuTEY1V0htL2Zhdmljb24uaWNvIiAvPmQCAw8WAh4Fc3R5bGUFDWZvbnQtc2l6ZTo4NyUWAgIBEGRkFgICCw9kFgwCCw9kFgICAQ9kFgoCAQ9kFgJmDw8WAh8ABSNQYWdlIGxhc3QgdXBkYXRlZCBvbjogMjggTWFyY2ggMjAxOWRkAgcPZBYCAgEPEA8WBh4NRGF0YVRleHRGaWVsZAUMTGFuZ3VhZ2VOYW1lHg5EYXRhVmFsdWVGaWVsZAUKTGFuZ3VhZ2VJZB4LXyFEYXRhQm91bmRnZBAVAgdFbmdsaXNoEuCkueCkv+CkqOCljeCkpuClgBUCATEBMhQrAwJnZxYBZmQCCQ9kFgJmDxYCHglpbm5lcmh0bWwFkEU8YSBocmVmPSJqYXZhc2NyaXB0OnZvaWQoMCk7IiBjbGFzcz0iaHVtYnVyZ2VyIj48c3Bhbj48L3NwYW4+PHNwYW4+PC9zcGFuPjxzcGFuPjwvc3Bhbj48L2E+PHVsPjxsaSBjbGFzcz0nZHJvcGRvd24nPjxhIGNsYXNzPSdkcm9wZG93bi10b2dnbGUnIHJvbGU9J2J1dHRvbicgYXJpYS1oYXNwb3B1cD0ndHJ1ZScgYXJpYS1leHBhbmRlZD0nZmFsc2UnIGhyZWY9Jy9hYm91dC11cy5odG0nIHRhcmdldD0nX3NlbGYnID5BYm91dCBVcyA8c3BhbiBjbGFzcz0iY2FyZXQiPjwvc3Bhbj48L2E+PHVsIGNsYXNzPSdkcm9wZG93bi1tZW51Jz48bGk+PGEgIGhyZWY9Jy9oaXN0b3J5Lmh0bScgdGFyZ2V0PSdfc2VsZicgPkhpc3Rvcnk8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy92aXNpb24tbWlzc2lvbi5odG0nIHRhcmdldD0nX3NlbGYnID5WaXNpb24gJmFtcDsgTWlzc2lvbjwvYT48L2xpPjxsaT48YSAgaHJlZj0nL2Z1bi5odG0nIHRhcmdldD0nX3NlbGYnID5GdW5jdGlvbnM8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy93aG9zLXdoby1vbmUuaHRtJyB0YXJnZXQ9J19zZWxmJyA+V2hvJiMzOTtzIFdobzwvYT48L2xpPjxsaT48YSBocmVmPScvb3JnYW5pc2F0aW9uLWNoYXJ0Lmh0bScgdGFyZ2V0PSdfc2VsZicgPk9yZ2FuaXNhdGlvbiBDaGFydDwvYT48L2xpPjwvdWw+PC9saT48bGkgY2xhc3M9J2Ryb3Bkb3duJz48YSBjbGFzcz0nZHJvcGRvd24tdG9nZ2xlJyByb2xlPSdidXR0b24nIGFyaWEtaGFzcG9wdXA9J3RydWUnIGFyaWEtZXhwYW5kZWQ9J2ZhbHNlJyBocmVmPSdzdWdhcl9DLmh0bScgdGFyZ2V0PSdfc2VsZicgPlNlY3RvcnMgPHNwYW4gY2xhc3M9ImNhcmV0Ij48L3NwYW4+PC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudSc+PGxpIGNsYXNzPSdkcm9wZG93biBkcm9wZG93bi1zdWJtZW51Jz48YSAgaHJlZj0nL2ltZXguaHRtJyB0YXJnZXQ9J19zZWxmJyA+SW1wb3J0cyAmYW1wOyBFeHBvcnRzPC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudSc+PGxpPjxhICBocmVmPScvaW1wLmh0bScgdGFyZ2V0PSdfc2VsZicgPkltcG9ydHM8L2E+PC9saT48bGk+PGEgaHJlZj0nL2V4cC5odG0nIHRhcmdldD0nX3NlbGYnID5FeHBvcnRzPC9hPjwvbGk+PC91bD48L2xpPjxsaSBjbGFzcz0nZHJvcGRvd24gZHJvcGRvd24tc3VibWVudSc+PGEgIGhyZWY9Jy9zdWdhcl9DLmh0bScgdGFyZ2V0PSdfc2VsZicgPlN1Z2FyPC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudSc+PGxpPjxhICBocmVmPSdnZW5fcG9saWN5Lmh0bScgdGFyZ2V0PSdfc2VsZicgPlBvbGljeTwvYT48L2xpPjxsaT48YSAgaHJlZj0nL3NjaGVtZV9DLmh0bScgdGFyZ2V0PSdfc2VsZicgPlNjaGVtZTwvYT48L2xpPjxsaT48YSAgaHJlZj0nL1NERi1NYWluLmh0bScgdGFyZ2V0PSdfc2VsZicgPlN1Z2FyIERldmVsb3BtZW50IEZ1bmQ8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9zcGYtc3VnYXIuaHRtJyB0YXJnZXQ9J19zZWxmJyA+U1BGPC9hPjwvbGk+PGxpPjxhICBocmVmPScvU3VnYXItQWRtaW4uaHRtJyB0YXJnZXQ9J19zZWxmJyA+U3VnYXIgQWRtaW48L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9hdHRhY2hlZE9mZmljZV9DLmh0bScgdGFyZ2V0PSdfc2VsZicgPkRpcmVjdG9yYXRlIG9mIFN1Z2FyICZhbXA7IFZPPC9hPjwvbGk+PGxpPjxhIGhyZWY9J25zaUthbnB1ci1uZXcuaHRtJyB0YXJnZXQ9J19zZWxmJyA+TlNJIEthbnB1cjwvYT48L2xpPjwvdWw+PC9saT48bGkgY2xhc3M9J2Ryb3Bkb3duIGRyb3Bkb3duLXN1Ym1lbnUnPjxhICBocmVmPSdwcm9jX3BvbGljeS5odG0nIHRhcmdldD0nX3NlbGYnID5Gb29kZ3JhaW5zPC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudSc+PGxpPjxhICBocmVmPScvcHJvY19wb2xpY3kuaHRtJyB0YXJnZXQ9J19zZWxmJyA+UHJvY3VyZW1lbnQ8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9zdG9yYWdlX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+U3RvcmFnZTwvYT48L2xpPjxsaT48YSAgaHJlZj0ncGQtSW50cm9kdWN0aW9uLmh0bScgdGFyZ2V0PSdfc2VsZicgPlB1YmxpYyBEaXN0cmlidXRpb248L2E+PC9saT48bGk+PGEgaHJlZj0nYWJvdXQtcy1yLmh0bScgdGFyZ2V0PSdfc2VsZicgPlF1YWxpdHkgQ29udHJvbDwvYT48L2xpPjwvdWw+PC9saT48bGkgY2xhc3M9J2Ryb3Bkb3duIGRyb3Bkb3duLXN1Ym1lbnUnPjxhIGhyZWY9J2V4cG9ydC1pbXBvcnQtcG9saWN5LWVkaWJsZS1vaWwuaHRtJyB0YXJnZXQ9J19zZWxmJyA+VmVnZXRhYmxlIE9pbDwvYT48dWwgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnPjxsaT48YSAgaHJlZj0nL3ZhZ2VQb2xpY3lfQy5odG0nIHRhcmdldD0nX3NlbGYnID5Qb2xpY3k8L2E+PC9saT48bGk+PGEgIGhyZWY9J1NBVk8tYWJvdXQuaHRtJyB0YXJnZXQ9J19zZWxmJyA+QXR0YWNoZWQgT2ZmaWNlPC9hPjwvbGk+PGxpPjxhIGhyZWY9Jy9SdWxlX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+UnVsZXM8L2E+PC9saT48L3VsPjwvbGk+PC91bD48L2xpPjxsaSBjbGFzcz0nZHJvcGRvd24nPjxhIGNsYXNzPSdkcm9wZG93bi10b2dnbGUnIHJvbGU9J2J1dHRvbicgYXJpYS1oYXNwb3B1cD0ndHJ1ZScgYXJpYS1leHBhbmRlZD0nZmFsc2UnIGhyZWY9Jy9kaXZpc2lvbnMtbmV3Lmh0bScgdGFyZ2V0PSdfc2VsZicgPkRpdmlzaW9ucyA8c3BhbiBjbGFzcz0iY2FyZXQiPjwvc3Bhbj48L2E+PHVsIGNsYXNzPSdkcm9wZG93bi1tZW51Jz48bGkgY2xhc3M9J2Ryb3Bkb3duIGRyb3Bkb3duLXN1Ym1lbnUnPjxhICBocmVmPSdwcm9jX3BvbGljeS5odG0nIHRhcmdldD0nX3NlbGYnID5Qb2xpY3kgJmFtcDsgRkNJPC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudSc+PGxpPjxhICBocmVmPSdwcm9jX3BvbGljeS5odG0nIHRhcmdldD0nX3NlbGYnID5Qb2xpY3k8L2E+PC9saT48bGk+PGEgIGhyZWY9J2FjdC0wNzEwMTUuaHRtJyB0YXJnZXQ9J19zZWxmJyA+RkNJPC9hPjwvbGk+PGxpPjxhICBocmVmPSdtb3ZlbWVudC5odG0nIHRhcmdldD0nX3NlbGYnID5Nb3ZlbWVudDwvYT48L2xpPjxsaT48YSBocmVmPScvdmlnaWxhbmNlX0NfbmV3Lmh0bScgdGFyZ2V0PSdfc2VsZicgPlZpZ2lsYW5jZTwvYT48L2xpPjwvdWw+PC9saT48bGkgY2xhc3M9J2Ryb3Bkb3duIGRyb3Bkb3duLXN1Ym1lbnUnPjxhICBocmVmPScvaW1wZXgtSUNfZGl2Lmh0bScgdGFyZ2V0PSdfc2VsZicgPklNUEVYICZhbXA7IElDPC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudSc+PGxpPjxhICBocmVmPScvSW1wZXhTZWN0aW9uLmh0bScgdGFyZ2V0PSdfc2VsZicgPkltcGV4IFNlY3Rpb248L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9pY3MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+SW50ZXJuYXRpb25hbCBDb29wZXJhdGlvbiBTZWN0aW9uPC9hPjwvbGk+PGxpPjxhICBocmVmPSdhYm91dC1zLXIuaHRtJyB0YXJnZXQ9J19zZWxmJyA+U3RvcmFnZSAmYW1wOyBSZXNlYXJjaDwvYT48L2xpPjxsaT48YSAgaHJlZj0nL2ljdC1uZXcuaHRtJyB0YXJnZXQ9J19zZWxmJyA+SUNUIFNlY3Rpb248L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9PTFMuaHRtJyB0YXJnZXQ9J19zZWxmJyA+T2ZmaWNpYWwgTGFuZ3VhZ2UgKE9MKSBTZWN0aW9uPC9hPjwvbGk+PGxpPjxhICBocmVmPScvU1JBX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+U1JBIFNlY3Rpb248L2E+PC9saT48bGk+PGEgaHJlZj0nb2lsLWRpdmlzaW9uLmh0bScgdGFyZ2V0PSdfc2VsZicgPlZlZ2V0YWJsZSBPaWw8L2E+PC9saT48L3VsPjwvbGk+PGxpIGNsYXNzPSdkcm9wZG93biBkcm9wZG93bi1zdWJtZW51Jz48YSAgaHJlZj0nL3N1Z2FyLWFkbWluaXN0cmF0aW9uX2Rpdi5odG0nIHRhcmdldD0nX3NlbGYnID5TdWdhciAmYW1wOyBBZG1pbmlzdHJhdGlvbjwvYT48dWwgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnPjxsaT48YSAgaHJlZj0nc3VnYXJfQy5odG0nIHRhcmdldD0nX3NlbGYnID5TdWdhcjwvYT48L2xpPjxsaT48YSBocmVmPSdlc3RhYmxpc2htZW50LWFkbWluLmh0bScgdGFyZ2V0PSdfc2VsZicgPkFkbWluaXN0cmF0aW9uPC9hPjwvbGk+PC91bD48L2xpPjxsaSBjbGFzcz0nZHJvcGRvd24gZHJvcGRvd24tc3VibWVudSc+PGEgIGhyZWY9Jy9zdG9yYWdlLVBHX2Rpdi5odG0nIHRhcmdldD0nX3NlbGYnID5TdG9yYWdlICZhbXA7IFBHPC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudSc+PGxpPjxhICBocmVmPSdzdG9yYWdlX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+U3RvcmFnZTwvYT48L2xpPjxsaT48YSBocmVmPScvcHVibGljLWdyaWV2YW5jZS1jZWxsLW5ldy5odG0nIHRhcmdldD0nX3NlbGYnID5QdWJsaWMgR3JpZXZhbmNlcyBDZWxsPC9hPjwvbGk+PC91bD48L2xpPjxsaSBjbGFzcz0nZHJvcGRvd24gZHJvcGRvd24tc3VibWVudSc+PGEgIGhyZWY9Jy9icC1wZC1DVk9fZGl2Lmh0bScgdGFyZ2V0PSdfc2VsZicgPkJhc2ljIFBsYW4gJmFtcDsgUHVibGljIERpc3RyaWJ1dGlvbjwvYT48dWwgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnPjxsaT48YSBocmVmPSdwZC1JbnRyb2R1Y3Rpb24uaHRtJyB0YXJnZXQ9J19zZWxmJyA+UHVibGljIERpc3RyaWJ1dGlvbjwvYT48L2xpPjwvdWw+PC9saT48bGk+PGEgIGhyZWY9Jy9lY29ub21pLWFkdmlzb3IuaHRtJyB0YXJnZXQ9J19zZWxmJyA+TkZTQSAmYW1wOyBOQUM8L2E+PC9saT48bGkgY2xhc3M9J2Ryb3Bkb3duIGRyb3Bkb3duLXN1Ym1lbnUnPjxhICBocmVmPScvZmluYW5jZS1idWRnZXQtYWNjb3VudHMuaHRtJyB0YXJnZXQ9J19zZWxmJyA+RmluYW5jZSwgQnVkZ2V0IGFuZCBBY2NvdW50czwvYT48dWwgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnPjxsaT48YSAgaHJlZj0nL2RpdmlzaW9uZmluYW5jZS5odG0nIHRhcmdldD0nX3NlbGYnID5GaW5hbmNlPC9hPjwvbGk+PGxpPjxhICBocmVmPScvZGl2YnVkZ2V0Lmh0bScgdGFyZ2V0PSdfc2VsZicgPkJ1ZGdldDwvYT48L2xpPjxsaT48YSBocmVmPScvZGl2YWNjb3VudHNzZWMuaHRtJyB0YXJnZXQ9J19zZWxmJyA+QWNjb3VudHM8L2E+PC9saT48L3VsPjwvbGk+PGxpPjxhIGhyZWY9J2Fib3V0LXBpY2VsbC5odG0nIHRhcmdldD0nX3NlbGYnID5QSSBDZWxsPC9hPjwvbGk+PC91bD48L2xpPjxsaSBjbGFzcz0nZHJvcGRvd24nPjxhIGNsYXNzPSdkcm9wZG93bi10b2dnbGUnIHJvbGU9J2J1dHRvbicgYXJpYS1oYXNwb3B1cD0ndHJ1ZScgYXJpYS1leHBhbmRlZD0nZmFsc2UnIGhyZWY9J2ZjaS5odG0nIHRhcmdldD0nX3NlbGYnID5PcmdhbmlzYXRpb25zIDxzcGFuIGNsYXNzPSJjYXJldCI+PC9zcGFuPjwvYT48dWwgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnPjxsaSBjbGFzcz0nZHJvcGRvd24gZHJvcGRvd24tc3VibWVudSc+PGEgIGhyZWY9J2ZjaS5odG0nIHRhcmdldD0nX3NlbGYnID5QdWJsaWMgU2VjdG9yIEVudGVycHJpc2VzPC9hPjx1bCBjbGFzcz0nZHJvcGRvd24tbWVudSc+PGxpPjxhICBocmVmPScvZmNpLmh0bScgdGFyZ2V0PSdfc2VsZicgPkZDSTwvYT48L2xpPjxsaT48YSAgaHJlZj0nL2N3Yy5odG0nIHRhcmdldD0nX3NlbGYnID5DV0M8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9jcndjLmh0bScgdGFyZ2V0PSdfc2VsZicgPkNSV0M8L2E+PC9saT48bGk+PGEgaHJlZj0nYWJvdXQtaHZvYy5odG0nIHRhcmdldD0nX3NlbGYnID5IVk9DPC9hPjwvbGk+PC91bD48L2xpPjxsaT48YSAgaHJlZj0nd2RyYU5ldy5odG0nIHRhcmdldD0nX3NlbGYnID5SZWd1bGF0b3J5IEJvZHk8L2E+PC9saT48bGkgY2xhc3M9J2Ryb3Bkb3duIGRyb3Bkb3duLXN1Ym1lbnUnPjxhICBocmVmPSdTQVZPLWFib3V0Lmh0bScgdGFyZ2V0PSdfc2VsZicgPkF0dGFjaGVkIE9mZmljZXM8L2E+PHVsIGNsYXNzPSdkcm9wZG93bi1tZW51Jz48bGk+PGEgaHJlZj0nU0FWTy1hYm91dC5odG0nIHRhcmdldD0nX3NlbGYnID5EaXJlY3RvcmF0ZSBvZiBTdWdhciBhbmQgVmVnZXRhYmxlIE9pbDwvYT48L2xpPjwvdWw+PC9saT48bGkgY2xhc3M9J2Ryb3Bkb3duIGRyb3Bkb3duLXN1Ym1lbnUnPjxhIGhyZWY9J25zaUthbnB1cl9DLmh0bScgdGFyZ2V0PSdfc2VsZicgPlN1Ym9yZGluYXRlIG9mZmljZXM8L2E+PHVsIGNsYXNzPSdkcm9wZG93bi1tZW51Jz48bGk+PGEgIGhyZWY9Jy9uc2lLYW5wdXJfQy5odG0nIHRhcmdldD0nX3NlbGYnID5OU0kgS2FucHVyPC9hPjwvbGk+PGxpPjxhICBocmVmPScvcWNjX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+UUNDPC9hPjwvbGk+PGxpPjxhIGhyZWY9Jy9pZ21yaV9DLmh0bScgdGFyZ2V0PSdfc2VsZicgPklHTVJJPC9hPjwvbGk+PC91bD48L2xpPjwvdWw+PC9saT48bGkgY2xhc3M9J2Ryb3Bkb3duJz48YSBjbGFzcz0nZHJvcGRvd24tdG9nZ2xlJyByb2xlPSdidXR0b24nIGFyaWEtaGFzcG9wdXA9J3RydWUnIGFyaWEtZXhwYW5kZWQ9J2ZhbHNlJyBocmVmPSdhY3RzX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+QWN0cyAmYW1wOyBSdWxlcyA8c3BhbiBjbGFzcz0iY2FyZXQiPjwvc3Bhbj48L2E+PHVsIGNsYXNzPSdkcm9wZG93bi1tZW51Jz48bGk+PGEgIGhyZWY9Jy9hY3RzX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+QWN0czwvYT48L2xpPjxsaT48YSAgaHJlZj0nL1J1bGVzX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+UnVsZXM8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9PcmRlcnNfQy5odG0nIHRhcmdldD0nX3NlbGYnID5PcmRlcnM8L2E+PC9saT48bGk+PGEgaHJlZj0nL05vdGlmaWNhdGlvbnNfQy5odG0nIHRhcmdldD0nX3NlbGYnID5Ob3RpZmljYXRpb25zPC9hPjwvbGk+PC91bD48L2xpPjxsaSBjbGFzcz0nZHJvcGRvd24nPjxhIGNsYXNzPSdkcm9wZG93bi10b2dnbGUnIHJvbGU9J2J1dHRvbicgYXJpYS1oYXNwb3B1cD0ndHJ1ZScgYXJpYS1leHBhbmRlZD0nZmFsc2UnIGhyZWY9J0VCb29rX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+UHVibGljYXRpb25zIDxzcGFuIGNsYXNzPSJjYXJldCI+PC9zcGFuPjwvYT48dWwgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnPjxsaSBjbGFzcz0nZHJvcGRvd24gZHJvcGRvd24tc3VibWVudSc+PGEgIGhyZWY9Jy9lLVBhbXBobGV0XzEwMGRheXMuaHRtJyB0YXJnZXQ9J19zZWxmJyA+ZS1QYW1waGxldDwvYT48dWwgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnPjxsaT48YSBocmVmPScvMTAwRGF5c0FjaGlldmVtZW50cy1lbmcuaHRtJyB0YXJnZXQ9J19zZWxmJyA+MTAwIERheXMgQWNoaWV2ZW1lbnRzPC9hPjwvbGk+PC91bD48L2xpPjxsaT48YSAgaHJlZj0nL0VCb29rX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyA+RS1Cb29rPC9hPjwvbGk+PGxpPjxhICBocmVmPScvYW5udWFsLXJlcG9ydC5odG0nIHRhcmdldD0nX3NlbGYnID5Bbm51YWwgUmVwb3J0czwvYT48L2xpPjxsaT48YSAgaHJlZj0nL21vbnRobHlSZXBvcnQuaHRtJyB0YXJnZXQ9J19zZWxmJyA+TW9udGhseSBTdW1tYXJ5PC9hPjwvbGk+PGxpPjxhICBocmVmPScvZm9vZC1ncmFpbi1idWxsZXRpbi5odG0nIHRhcmdldD0nX3NlbGYnID5Gb29kIEdyYWluIEJ1bGxldGluPC9hPjwvbGk+PGxpIGNsYXNzPSdkcm9wZG93biBkcm9wZG93bi1zdWJtZW51Jz48YSBocmVmPScvb3RoZXItcHVibGljYXRpb25zLmh0bScgdGFyZ2V0PSdfc2VsZicgPk90aGVyIFB1YmxpY2F0aW9uczwvYT48dWwgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnPjxsaT48YSBocmVmPScva2hhZHlhc3Vya3NoYV9DQy5odG0nIHRhcmdldD0nX3NlbGYnID5LaGFkeWEgU3VyYWtzaGE8L2E+PC9saT48L3VsPjwvbGk+PC91bD48L2xpPjxsaSBjbGFzcz0nZHJvcGRvd24nPjxhIGNsYXNzPSdkcm9wZG93bi10b2dnbGUnIHJvbGU9J2J1dHRvbicgYXJpYS1oYXNwb3B1cD0ndHJ1ZScgYXJpYS1leHBhbmRlZD0nZmFsc2UnIGhyZWY9Jy9DaXJjdWxhcl9Ib21lLmh0bScgdGFyZ2V0PSdfc2VsZicgPkNpcmN1bGFyIDxzcGFuIGNsYXNzPSJjYXJldCI+PC9zcGFuPjwvYT48dWwgY2xhc3M9J2Ryb3Bkb3duLW1lbnUnPjxsaT48YSAgaHJlZj0nL0lDVC1DaXJjLmh0bScgdGFyZ2V0PSdfc2VsZicgPklDVDwvYT48L2xpPjxsaT48YSAgaHJlZj0nL1N1Z2FyIEFkbWluaXN0cmF0aW9uLmh0bScgdGFyZ2V0PSdfc2VsZicgPlN1Z2FyIEFkbWluaXN0cmF0aW9uPC9hPjwvbGk+PGxpPjxhICBocmVmPScvQWRtaW5pc3RyYXRpdmUuaHRtJyB0YXJnZXQ9J19zZWxmJyA+QWRtaW5pc3RyYXRpdmU8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9Qcm9jdXJlbWVudHQuaHRtJyB0YXJnZXQ9J19zZWxmJyA+UHJvY3VyZW1lbnQ8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9ORlNBX2NpcmN1bGFyLmh0bScgdGFyZ2V0PSdfc2VsZicgPk5GU0E8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9TdG9yYWdlX2NpcmN1bGFyLmh0bScgdGFyZ2V0PSdfc2VsZicgPlN0b3JhZ2U8L2E+PC9saT48bGk+PGEgIGhyZWY9Jy9TdWdhcl9jaXJjdWxhci5odG0nIHRhcmdldD0nX3NlbGYnID5TdWdhcjwvYT48L2xpPjxsaT48YSAgaHJlZj0nL3ZlZ29pbF9jaXJjdWxhci5odG0nIHRhcmdldD0nX3NlbGYnID5WZWdldGFibGUgT2lsPC9hPjwvbGk+PGxpPjxhICBocmVmPScvUXVhbGl0eUNvbnRyb2xfY2lyY3VsYXIuaHRtJyB0YXJnZXQ9J19zZWxmJyA+UXVhbGl0eSBDb250cm9sPC9hPjwvbGk+PGxpPjxhICBocmVmPScvcHVibGljLWRpc3RyaWJ1dGlvbi1yZWZvcm1zLmh0bScgdGFyZ2V0PSdfc2VsZicgPlB1YmxpYyBEaXN0cmlidXRpb24gYW5kIFJlZm9ybXM8L2E+PC9saT48bGk+PGEgaHJlZj0nL090aGVyc19jaXJjdWxhci5odG0nIHRhcmdldD0nX3NlbGYnID5PdGhlcnM8L2E+PC9saT48L3VsPjwvbGk+PGxpIHN0eWxlPSJiYWNrZ3JvdW5kOm5vbmUiIGNsYXNzPSdNZW51TGkgTWVudUxpTGFzdCBNZW51TGk4Jz48YSBjbGFzcz0nbWVudUZpcnN0Tm9kZScgaHJlZj0nL2NvbnRhY3QuaHRtJyB0YXJnZXQ9J19zZWxmJyA+Q29udGFjdCBVczwvYT48L2xpPjwvdWw+ZAIND2QWAmYPFgIfBQWVEjxoMj5Db250YWN0IFVzPC9oMj48dWwgaWQ9J21lbnVMZWZ0JyBjbGFzcz0ncGFnZUxpbmsnPjxsaT48YSBocmVmPSdsaXN0LW9mLW1pbmlzdGVycy5odG0nIHRhcmdldD0nX3NlbGYnIHRpdGxlPSdUZWxlcGhvbmUgJmFtcDsgRS1NYWlsIERpcmVjdG9yeScgPlRlbGVwaG9uZSAmYW1wOyBFLU1haWwgRGlyZWN0b3J5PC9hPjx1bD48bGk+PGEgaHJlZj0nY2FiaW5ldE1pbmlzdGVyX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyB0aXRsZT0nSG9uYGJsZSBNaW5zaXRlciBPZmZpY2UnPkhvbiYjMzk7YmxlIE1pbnNpdGVyIE9mZmljZTwvYT48L2xpPjxsaT48YSBocmVmPSdtb3NfQy5odG0nIHRhcmdldD0nX3NlbGYnIHRpdGxlPSdIb25gYmxlIE1PUyBPZmZpY2UnPkhvbiYjMzk7YmxlIE1PUyBPZmZpY2U8L2E+PC9saT48bGk+PGEgaHJlZj0nL3NlY3JldGFyeUZEX0MuaHRtJyB0YXJnZXQ9J19zZWxmJyB0aXRsZT0nU2VjcmV0YXJ5Jz5TZWNyZXRhcnk8L2E+PC9saT48bGk+PGEgaHJlZj0nL2ZpbmFuY2UtZGl2aXNpb24uaHRtJyB0YXJnZXQ9J19zZWxmJyB0aXRsZT0nRmluYW5jZSc+RmluYW5jZTwvYT48L2xpPjxsaT48YSBocmVmPScvc3VnYXItc3VnYXIuaHRtJyB0YXJnZXQ9J19zZWxmJyB0aXRsZT0nU3VnYXIgJmFtcDsgQWRtaW5pc3RyYXRpb24nPlN1Z2FyICZhbXA7IEFkbWluaXN0cmF0aW9uPC9hPjwvbGk+PGxpPjxhIGhyZWY9Jy9zcmEtaW1wZXgtZW9wLWljLmh0bScgdGFyZ2V0PSdfc2VsZicgdGl0bGU9J0ltcGV4ICZhbXA7IElDJz5JbXBleCAmYW1wOyBJQzwvYT48L2xpPjxsaT48YSBocmVmPScvcG9saWN5LWZjaS1tb3Z0LWRpdmlzaW9uLmh0bScgdGFyZ2V0PSdfc2VsZicgdGl0bGU9J1BvbGljeSAmYW1wOyBGQ0knPlBvbGljeSAmYW1wOyBGQ0k8L2E+PC9saT48bGk+PGEgaHJlZj0nL1ZpZ2lsYW5jZV9OZXcuaHRtJyB0YXJnZXQ9J19zZWxmJyB0aXRsZT0nVmlnaWxhbmNlJz5WaWdpbGFuY2U8L2E+PC9saT48bGk+PGEgaHJlZj0nL2JwLXBkLWRpdmlzaW9uLmh0bScgdGFyZ2V0PSdfc2VsZicgdGl0bGU9J0JQICZhbXA7IFBEJz5CUCAmYW1wOyBQRDwvYT48L2xpPjxsaT48YSBocmVmPScvc3RvcmFnZS1kaXZpc2lvbi5odG0nIHRhcmdldD0nX3NlbGYnIHRpdGxlPSdTdG9yYWdlICZhbXA7IFBHJz5TdG9yYWdlICZhbXA7IFBHPC9hPjwvbGk+PGxpPjxhIGhyZWY9Jy9QcmluY2lwYWwtQWR2aXNvci5odG0nIHRhcmdldD0nX3NlbGYnIHRpdGxlPSdQcmluY2lwYWwgQWR2aXNvcic+UHJpbmNpcGFsIEFkdmlzb3I8L2E+PC9saT48bGk+PGEgaHJlZj0nL2Vjb25vbWljQWR2aXNvcl9DLmh0bScgdGFyZ2V0PSdfc2VsZicgdGl0bGU9J0Vjb25vbWljIEFkdmlzb3InPkVjb25vbWljIEFkdmlzb3I8L2E+PC9saT48bGk+PGEgaHJlZj0nL2NoaWVmLWNvbnRyb2xsZXItb2YtYWNjb3VudHMuaHRtJyB0YXJnZXQ9J19zZWxmJyB0aXRsZT0nQ2hpZWYgQ29udHJvbGxlciBvZiBBY2NvdW50cyc+Q2hpZWYgQ29udHJvbGxlciBvZiBBY2NvdW50czwvYT48L2xpPjxsaT48YSBocmVmPScvcGF5YWNjb3VudHNvZmZpY2Vyc19DLmh0bScgdGFyZ2V0PSdfc2VsZicgdGl0bGU9J1BheSBhbmQgQWNjb3VudHMgT2ZmaWNlcnMnPlBheSBhbmQgQWNjb3VudHMgT2ZmaWNlcnM8L2E+PC9saT48bGk+PGEgaHJlZj0nL21pc2NlbGxhbmVvdXMtbnVtYmVyLmh0bScgdGFyZ2V0PSdfc2VsZicgdGl0bGU9J01pc2NlbGxhbmVvdXMnPk1pc2NlbGxhbmVvdXM8L2E+PC9saT48bGk+PGEgaHJlZj0nL3B1YmxpYy1zZWN0b3ItdW5kZXJ0YWtpbmdzLmh0bScgdGFyZ2V0PSdfc2VsZicgdGl0bGU9J1B1YmxpYyBTZWN0b3IgVW5kZXJ0YWtpbmdzJz5QdWJsaWMgU2VjdG9yIFVuZGVydGFraW5nczwvYT48L2xpPjxsaT48YSBocmVmPScvdGVsZXBob25lLWNvbXBsYWludHMuaHRtJyB0YXJnZXQ9J19zZWxmJyB0aXRsZT0nVGVsZXBob25lIENvbXBsYWludHMnPlRlbGVwaG9uZSBDb21wbGFpbnRzPC9hPjwvbGk+PGxpPjxhIGhyZWY9Jy9jcHdkLmh0bScgdGFyZ2V0PSdfc2VsZicgdGl0bGU9J0NQV0QnPkNQV0Q8L2E+PC9saT48bGk+PGEgaHJlZj0nL2RpcmVjdG9yYXRlLW9mLXN1Z2FyLXZlZy1vaWxzLmh0bScgdGFyZ2V0PSdfc2VsZicgdGl0bGU9J0RpcmVjdG9yYXRlIG9mIFN1Z2FyICZhbXA7IFZlZ2V0YWJsZSBPaWxzJz5EaXJlY3RvcmF0ZSBvZiBTdWdhciAmYW1wOyBWZWdldGFibGUgT2lsczwvYT48L2xpPjxsaT48YSBocmVmPScvbmljLWNvbXB1dGVyLWNlbnRlci5odG0nIHRhcmdldD0nX3NlbGYnIHRpdGxlPSdOSUMnPk5JQzwvYT48L2xpPjwvdWw+PC9saT48L3VsPiA8YnIgc3R5bGU9J2NsZWFyOiBsZWZ0JyAvPmQCEQ9kFgJmDw8WAh8ABSlWaXNpdG9yIENvdW50ZXI6IDxzdHJvbmc+NjExOTE2MDwvc3Ryb25nPmRkAg0PDxYCHwBkZGQCDw8WAh4HVmlzaWJsZWhkAhEPDxYCHwBkZGQCEw8WAh8GaGQCFQ8WAh8GaGRkaOBWcinIpiJrUqERYHYBiehpYmuI+VDYrvkLbRGc3Z8=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script><noscript class="displayNone"> This website uses Javascript </noscript>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+</div>
+    
+    
+    <input type="hidden" name="ctl00$bodyDefaultTextSizehdn" id="bodyDefaultTextSizehdn" value="87">
+    <input type="hidden" name="ctl00$hdnSiteName" id="hdnSiteName" value="vanilla">
+    <input name="ctl00$RootPathInt" type="hidden" id="RootPathInt">
+    
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnJSON" id="ContentPlaceHolder1_hdnJSON">
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnListID" id="ContentPlaceHolder1_hdnListID" value="0">
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnAchiveCount" id="ContentPlaceHolder1_hdnAchiveCount" value="0">
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnLang" id="ContentPlaceHolder1_hdnLang" value="1">
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$hdTimeTicker" id="ContentPlaceHolder1_hdTimeTicker" value="__4">
+    <div id="ContentPlaceHolder1_mainbody">
+    
+<div class="dfpd-header">
+<div class="container">
+<div class="header-top">
+<ul class="pull-left">
+<li><span id="ContentPlaceHolder1_UserPageLastUpdateDate1_lblPageLastUpdateDate">Page last updated on: 28 March 2019</span> </li><li class="hide-mobile"><a href="https://dfpd.gov.in/contact.htm">Skip to Main Content</a> | <a href="https://dfpd.gov.in/screen-reader-access.htm">
+Screen Reader Access</a> | 
+
+
+
+<a href="javascript:void(0)" id="btnAorig">A</a>
+<a href="javascript:void(0)" id="btnAIncre">A+</a>
+
+<a href="javascript:void(0)" id="btnAminus">A++</a> | 
+<a href="javascript:void(0);" id="printId"><span class="glyphicon glyphicon-print"></span></a>
+<script type="text/javascript" src="./Contactus_files/jquery-3.3.1.min.js.download"></script>
+
+
+
+<script src="./Contactus_files/jQuery.print.js.download"></script>
+<script>
+     
+     $(document).ready(function () {
+        
+             $("#printId").click(function () {
+             //    var mode = 'iframe';
+             //    var close = mode == 'popup';
+             //    var options = { mode: mode, popClose: close };
+                 
+             //    var obj = $("#bdMainSite").prepend('<style>.main-nav {background: #81a55e;}</style>');
+             //    $(obj).printArea(options);
+                 PrintSDF();
+               //  printbox();
+                 
+
+
+             });
+         });
+      function printbox() {
+        var newWin = window.open('', 'Print-Window');
+        newWin.document.open();
+        newWin.document.write('<html><link rel="stylesheet" href="assets/css/style.css" /><link href="/assets/css/green.css"><body onload="window.print()">' + $("#bdMainSite").html() + '</body></html>');
+        newWin.document.close();
+        setTimeout(function () { newWin.close(); }, 10);
+    }
+ </script>
+
+ 
+
+
+
+
+
+
+
+<script>
+    function PrintSDF() {
+        // alert("zfdzfdz");
+        $("#bdMainSite").print({
+            globalStyles: true,
+            mediaPrint: true,
+            stylesheet: 'http://103.245.10.182:8080/assets/css/printstyle.css',
+            noPrintSelector: ".no-print",
+            iframe: false,
+            append: '',
+            prepend:'',
+            manuallyCopyFormValues: true,
+            deferred: $.Deferred(),
+            timeout: 5000,
+            title: null,
+            doctype: '<!doctype html>'
+        });
+        // return true;
+        //var data = $("#mainbody").html();
+        //var mywindow = window.open('', 'new div', 'height=400,width=600');
+        //mywindow.document.write('<html><head><title></title>');
+        //mywindow.document.write('<link rel="stylesheet" href="css/printstyle.css" type="text/css" />');
+        //mywindow.document.write('</head><body >');
+        //mywindow.document.write(data);
+        //mywindow.document.write('</body></html>');
+
+        //mywindow.print();
+        //mywindow.close();
+        return true;
+       
+    }
+
+</script>
+
+<script>
+    var $affectedElements = $("div, p"); // Can be extended, ex. $("div, p, span.someClass")
+
+    // Storing the original size in a data attribute so size can be reset
+    $affectedElements.each(function () {
+        var $this = $(this);
+        $this.data("orig-size", $this.css("font-size"));
+    });
+    var count = 0;
+    $("#btnAIncre").click(function () {
+        count++;
+        if (count < 5) {
+            changeFontSize(1);
+        }
+
+    })
+    var cnt = 0;
+    $("#btnAminus").click(function () {
+        cnt++;
+        if (cnt < 10) {
+            changeFontSize(1);
+        }
+    })
+
+    $("#btnAorig").click(function () {
+        $affectedElements.each(function () {
+            debugger;
+            var $this = $(this);
+            count = 0;
+            cnt = 0;
+            $this.css("font-size", parseInt($this.data("orig-size")));
+        });
+    })
+
+    function changeFontSize(direction) {
+        $affectedElements.each(function () {
+            var $this = $(this);
+            $this.css("font-size", parseInt($this.css("font-size")) + direction);
+        });
+    }
+
+</script>
+ |</li></ul>
+<ul class="pull-left right-top-nav">
+
+<li> <a id="ContentPlaceHolder1_ColorChange_LinkButton1" class="balck-yellow" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$ColorChange$LinkButton1&#39;,&#39;&#39;)">A</a></li>
+ <li><a id="ContentPlaceHolder1_ColorChange_LinkButton2" class="white" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$ColorChange$LinkButton2&#39;,&#39;&#39;)">A</a></li>
+
+
+<li class="langaugeDropdown">
+<div class="langSwitch">
+<div class="languageSelect">
+<script language="JavaScript" type="text/javascript">
+    function setVisibility(id, visibility, status) {
+        if (status == "over") {
+            document.getElementById(id).style.display = visibility;
+        }
+        else {
+            document.getElementById(id).style.display = visibility;
+        }
+    }
+
+
+    $(document).ready(function () {
+        $('#ContentPlaceHolder1_UserLanguageDropdown1_btnStateGo1').hide();
+    });
+</script>
+<noscript class="displayNone">
+    This website uses Javascript</noscript>
+
+<select name="ctl00$ContentPlaceHolder1$UserLanguageDropdown1$ddlLanguage" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$UserLanguageDropdown1$ddlLanguage\&#39;,\&#39;\&#39;)&#39;, 0)" id="ContentPlaceHolder1_UserLanguageDropdown1_ddlLanguage" title="Language" class="mySelectBoxClass hasCustomSelect" style="-webkit-appearance: menulist-button; width: 66px; position: absolute; opacity: 0; height: 37.6px; font-size: 12px;">
+	<option selected="selected" value="1">English</option>
+	<option value="2">हिन्दी</option>
+
+</select><span class="customSelect mySelectBoxClass" style="display: inline-block;"><span class="customSelectInner" style="width: 66px; display: inline-block;">English</span></span>
+<input type="submit" name="ctl00$ContentPlaceHolder1$UserLanguageDropdown1$btnStateGo1" value="Go" id="ContentPlaceHolder1_UserLanguageDropdown1_btnStateGo1" class="buttonGo" style="display: none;">
+
+<script>
+    $(document).ready(function () {
+        $('.languageSelect').append('<i class="caret"></i>');
+    });
+</script>
+<style>
+    .languageSelect {
+        position: relative;
+    }
+    .languageSelect .caret {position: absolute; right: 10px; top: 50%; transform: translateY(-50%);}
+</style>
+<i class="caret"></i></div>
+</div>
+</li></ul>
+<div class="hdr-form"><span style="font-style:italic"></span></div>
+</div>
+</div>
+<div class="mid-header">
+<div class="container"><a href="https://dfpd.gov.in/index.htm" class="pull-left"><img src="./Contactus_files/logo.png" class="img-responsive" alt=""></a>
+<div class="pull-right"><a href="http://www.swachhbharaturban.in/sbm/home/#/SBM" target="blank" class="pull-left hide-mobile"><img src="./Contactus_files/clean_india.png" class="img-responsive" alt=""></a><a href="http://www.digitalindia.gov.in/" target="blank" class="pull-right hide-mobile"><img src="./Contactus_files/digital_india.png" class="img-responsive" alt=""></a></div>
+</div>
+</div>
+<div>
+
+
+
+<div class="main-nav">
+    <div class="sticky-nav">
+        <div class="container relative">
+            
+            <div id="ContentPlaceHolder1_UserMenuHorizontalUpdate_divMenu"><a href="javascript:void(0);" class="humburger"><span></span><span></span><span></span></a><ul><li class="dropdown"><a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="https://dfpd.gov.in/about-us.htm" target="_self">About Us <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/history.htm" target="_self">History</a></li><li><a href="https://dfpd.gov.in/vision-mission.htm" target="_self">Vision &amp; Mission</a></li><li><a href="https://dfpd.gov.in/fun.htm" target="_self">Functions</a></li><li><a href="https://dfpd.gov.in/whos-who-one.htm" target="_self">Who's Who</a></li><li><a href="https://dfpd.gov.in/organisation-chart.htm" target="_self">Organisation Chart</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="https://dfpd.gov.in/sugar_C.htm" target="_self">Sectors <span class="caret"></span></a><ul class="dropdown-menu"><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/imex.htm" target="_self">Imports &amp; Exports</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/imp.htm" target="_self">Imports</a></li><li><a href="https://dfpd.gov.in/exp.htm" target="_self">Exports</a></li></ul></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/sugar_C.htm" target="_self">Sugar</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/gen_policy.htm" target="_self">Policy</a></li><li><a href="https://dfpd.gov.in/scheme_C.htm" target="_self">Scheme</a></li><li><a href="https://dfpd.gov.in/SDF-Main.htm" target="_self">Sugar Development Fund</a></li><li><a href="https://dfpd.gov.in/spf-sugar.htm" target="_self">SPF</a></li><li><a href="https://dfpd.gov.in/Sugar-Admin.htm" target="_self">Sugar Admin</a></li><li><a href="https://dfpd.gov.in/attachedOffice_C.htm" target="_self">Directorate of Sugar &amp; VO</a></li><li><a href="https://dfpd.gov.in/nsiKanpur-new.htm" target="_self">NSI Kanpur</a></li></ul></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/proc_policy.htm" target="_self">Foodgrains</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/proc_policy.htm" target="_self">Procurement</a></li><li><a href="https://dfpd.gov.in/storage_C.htm" target="_self">Storage</a></li><li><a href="https://dfpd.gov.in/pd-Introduction.htm" target="_self">Public Distribution</a></li><li><a href="https://dfpd.gov.in/about-s-r.htm" target="_self">Quality Control</a></li></ul></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/export-import-policy-edible-oil.htm" target="_self">Vegetable Oil</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/vagePolicy_C.htm" target="_self">Policy</a></li><li><a href="https://dfpd.gov.in/SAVO-about.htm" target="_self">Attached Office</a></li><li><a href="https://dfpd.gov.in/Rule_C.htm" target="_self">Rules</a></li></ul></li></ul></li><li class="dropdown"><a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="https://dfpd.gov.in/divisions-new.htm" target="_self">Divisions <span class="caret"></span></a><ul class="dropdown-menu"><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/proc_policy.htm" target="_self">Policy &amp; FCI</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/proc_policy.htm" target="_self">Policy</a></li><li><a href="https://dfpd.gov.in/act-071015.htm" target="_self">FCI</a></li><li><a href="https://dfpd.gov.in/movement.htm" target="_self">Movement</a></li><li><a href="https://dfpd.gov.in/vigilance_C_new.htm" target="_self">Vigilance</a></li></ul></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/impex-IC_div.htm" target="_self">IMPEX &amp; IC</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/ImpexSection.htm" target="_self">Impex Section</a></li><li><a href="https://dfpd.gov.in/ics.htm" target="_self">International Cooperation Section</a></li><li><a href="https://dfpd.gov.in/about-s-r.htm" target="_self">Storage &amp; Research</a></li><li><a href="https://dfpd.gov.in/ict-new.htm" target="_self">ICT Section</a></li><li><a href="https://dfpd.gov.in/OLS.htm" target="_self">Official Language (OL) Section</a></li><li><a href="https://dfpd.gov.in/SRA_C.htm" target="_self">SRA Section</a></li><li><a href="https://dfpd.gov.in/oil-division.htm" target="_self">Vegetable Oil</a></li></ul></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/sugar-administration_div.htm" target="_self">Sugar &amp; Administration</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/sugar_C.htm" target="_self">Sugar</a></li><li><a href="https://dfpd.gov.in/establishment-admin.htm" target="_self">Administration</a></li></ul></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/storage-PG_div.htm" target="_self">Storage &amp; PG</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/storage_C.htm" target="_self">Storage</a></li><li><a href="https://dfpd.gov.in/public-grievance-cell-new.htm" target="_self">Public Grievances Cell</a></li></ul></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/bp-pd-CVO_div.htm" target="_self">Basic Plan &amp; Public Distribution</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/pd-Introduction.htm" target="_self">Public Distribution</a></li></ul></li><li><a href="https://dfpd.gov.in/economi-advisor.htm" target="_self">NFSA &amp; NAC</a></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/finance-budget-accounts.htm" target="_self">Finance, Budget and Accounts</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/divisionfinance.htm" target="_self">Finance</a></li><li><a href="https://dfpd.gov.in/divbudget.htm" target="_self">Budget</a></li><li><a href="https://dfpd.gov.in/divaccountssec.htm" target="_self">Accounts</a></li></ul></li><li><a href="https://dfpd.gov.in/about-picell.htm" target="_self">PI Cell</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="https://dfpd.gov.in/fci.htm" target="_self">Organisations <span class="caret"></span></a><ul class="dropdown-menu"><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/fci.htm" target="_self">Public Sector Enterprises</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/fci.htm" target="_self">FCI</a></li><li><a href="https://dfpd.gov.in/cwc.htm" target="_self">CWC</a></li><li><a href="https://dfpd.gov.in/crwc.htm" target="_self">CRWC</a></li><li><a href="https://dfpd.gov.in/about-hvoc.htm" target="_self">HVOC</a></li></ul></li><li><a href="https://dfpd.gov.in/wdraNew.htm" target="_self">Regulatory Body</a></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/SAVO-about.htm" target="_self">Attached Offices</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/SAVO-about.htm" target="_self">Directorate of Sugar and Vegetable Oil</a></li></ul></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/nsiKanpur_C.htm" target="_self">Subordinate offices</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/nsiKanpur_C.htm" target="_self">NSI Kanpur</a></li><li><a href="https://dfpd.gov.in/qcc_C.htm" target="_self">QCC</a></li><li><a href="https://dfpd.gov.in/igmri_C.htm" target="_self">IGMRI</a></li></ul></li></ul></li><li class="dropdown"><a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="https://dfpd.gov.in/acts_C.htm" target="_self">Acts &amp; Rules <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/acts_C.htm" target="_self">Acts</a></li><li><a href="https://dfpd.gov.in/Rules_C.htm" target="_self">Rules</a></li><li><a href="https://dfpd.gov.in/Orders_C.htm" target="_self">Orders</a></li><li><a href="https://dfpd.gov.in/Notifications_C.htm" target="_self">Notifications</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="https://dfpd.gov.in/EBook_C.htm" target="_self">Publications <span class="caret"></span></a><ul class="dropdown-menu"><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/e-Pamphlet_100days.htm" target="_self">e-Pamphlet</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/100DaysAchievements-eng.htm" target="_self">100 Days Achievements</a></li></ul></li><li><a href="https://dfpd.gov.in/EBook_C.htm" target="_self">E-Book</a></li><li><a href="https://dfpd.gov.in/annual-report.htm" target="_self">Annual Reports</a></li><li><a href="https://dfpd.gov.in/monthlyReport.htm" target="_self">Monthly Summary</a></li><li><a href="https://dfpd.gov.in/food-grain-bulletin.htm" target="_self">Food Grain Bulletin</a></li><li class="dropdown dropdown-submenu"><a href="https://dfpd.gov.in/other-publications.htm" target="_self">Other Publications</a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/khadyasurksha_CC.htm" target="_self">Khadya Suraksha</a></li></ul></li></ul></li><li class="dropdown"><a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" href="https://dfpd.gov.in/Circular_Home.htm" target="_self">Circular <span class="caret"></span></a><ul class="dropdown-menu"><li><a href="https://dfpd.gov.in/ICT-Circ.htm" target="_self">ICT</a></li><li><a href="https://dfpd.gov.in/Sugar%20Administration.htm" target="_self">Sugar Administration</a></li><li><a href="https://dfpd.gov.in/Administrative.htm" target="_self">Administrative</a></li><li><a href="https://dfpd.gov.in/Procurementt.htm" target="_self">Procurement</a></li><li><a href="https://dfpd.gov.in/NFSA_circular.htm" target="_self">NFSA</a></li><li><a href="https://dfpd.gov.in/Storage_circular.htm" target="_self">Storage</a></li><li><a href="https://dfpd.gov.in/Sugar_circular.htm" target="_self">Sugar</a></li><li><a href="https://dfpd.gov.in/vegoil_circular.htm" target="_self">Vegetable Oil</a></li><li><a href="https://dfpd.gov.in/QualityControl_circular.htm" target="_self">Quality Control</a></li><li><a href="https://dfpd.gov.in/public-distribution-reforms.htm" target="_self">Public Distribution and Reforms</a></li><li><a href="https://dfpd.gov.in/Others_circular.htm" target="_self">Others</a></li></ul></li><li style="background:none" class="MenuLi MenuLiLast MenuLi8"><a class="menuFirstNode" href="https://dfpd.gov.in/contact.htm" target="_self">Contact Us</a></li></ul></div>
+            
+          <input type="hidden" name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$KeywordSearch$hdnLanguageID" id="ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_hdnLanguageID" value="1">
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$KeywordSearch$hdnSiteID" id="ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_hdnSiteID" value="1">
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$KeywordSearch$hdnInternalMEA" id="ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_hdnInternalMEA" value="0">
+<div class="search-form">
+<div id="ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_pnlKeywordSrch" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_btnSearch&#39;)">
+	
+    
+    <input name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$KeywordSearch$txtKeyword" type="text" value="Search" id="ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_txtKeyword" title="Enter Keywords" class="srcFld form-control search-box" placeholder="Search" onblur="if (this.value ==&#39;&#39; || this.value==&#39;Enter valid search text&#39;) this.value = this.defaultValue; " onfocus="this.value=&#39;&#39;">
+ 
+
+        <input type="submit" name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$KeywordSearch$btnSearch" value="Search" onclick="return CheckString();" id="ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_btnSearch" title="Minimum 3 character required" class="search-form-icon">
+    
+
+        <div class="searchGo displayNone">
+    <span class="goBtnIcon toolTip" title="Click to Search"></span>
+    
+  </div>
+
+</div>
+    </div>
+
+<script src="./Contactus_files/jsapi" type="text/javascript"></script>
+<noscript class="displayNone">This website uses Javascript
+</noscript>
+
+<script type="text/javascript">
+//<![CDATA[
+
+
+
+    function CheckString() {
+        var Key = document.getElementById('ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_txtKeyword');
+        if (Key.value.length < 3) {
+            Key.value = "Minimum 3 character required";
+            return false;
+
+        }
+        if (Key.value == Key.defaultValue) {
+            Key.value = "Enter valid search text";
+            return false;
+        }
+
+        if (Key.value == "Minimum 3 character required" || Key.value == "Enter valid search text") {
+            return false;
+        }
+        return true;
+    }
+
+    var hdnLanguageID = document.getElementById('ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_hdnLanguageID');
+//    if (hdnLanguageID.value == '2') {
+//        google.load("elements", "1", { packages: "transliteration" });
+//        function onLoad() {
+//            var options = { sourceLanguage: 'en', destinationLanguage: ['hi'], shortcutKey: 'ctrl+g', transliterationEnabled: true };
+//            var control = new google.elements.transliteration.TransliterationControl(options);
+//            control.makeTransliteratable(['ContentPlaceHolder1_KeywordSearch1_txtKeyword']);
+//        }
+//        google.setOnLoadCallback(onLoad);
+//    }
+
+    /*  Auto Suggestion Script */
+    $(function () {
+	
+        $("#ContentPlaceHolder1_KeywordSearch1_txtKeyword").autocomplete({
+            source: function (request, response) {
+                var pID;
+                var hdnSiteID = document.getElementById('ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_hdnSiteID'); ;
+                var hdnLanguageID = document.getElementById('ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_hdnLanguageID');
+                if (hdnSiteID.value == '') pID = 1;
+                else pID = hdnSiteID.value;
+                $.ajax({
+                    url: "AutoCompleteService.asmx/AutoSugessionSiteSearch",
+                    data: "{ 'SearchText': '" + escape(request.term) + "' , 'SiteId':'" + pID + "', 'LanguageId':'" + document.getElementById('ContentPlaceHolder1_UserMenuHorizontalUpdate_KeywordSearch_hdnLanguageID').value + "', 'TopRecords':'" + '10' + "' }",
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    dataFilter: function (data) { return data; },
+                    success: function (data) {
+                        response($.map(data.d, function (item) {
+                            var label1 = item.split("::");
+                            return {
+                                value: label1[1] + "::" + label1[2],
+                                label: label1[0]
+                            }
+                        }))
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                      //  alert(textStatus);
+                    }
+                });
+            },
+            select: function (event, ui) {
+                $(event.target).val(ui.item.label);
+                var target = ui.item.value.split("::")
+                if (target[1] == "_blank") {
+                    window.open(target[0], '_blank');
+                }
+                else {
+                    //window.location = ui.item.value;
+                    window.location = target[0];
+                }
+                return false;
+            },
+            minLength: 3
+        });
+        /*  Auto Suggestion Script */
+        //-->
+    });
+	function searchAndHighlight(searchTerm, selector, highlightClass, removePreviousHighlights) {
+          
+            if (searchTerm) {
+            
+                //var wholeWordOnly = new RegExp("\\g"+searchTerm+"\\g","ig"); //matches whole word only
+                //var anyCharacter = new RegExp("\\g["+searchTerm+"]\\g","ig"); //matches any word with any of search chars characters
+                var selector = selector || "body",                             //use body as selector if none provided
+            searchTermRegEx = new RegExp("(" + searchTerm + ")", "gi"),
+            matches = 0,
+            helper = {};
+                helper.doHighlight = function (node, searchTerm) {
+                    if (node.nodeType === 3) {
+                        if (node.nodeValue.match(searchTermRegEx)) {
+                            matches++;
+                            var tempNode = document.createElement('span');
+                            tempNode.innerHTML = node.nodeValue.replace(searchTermRegEx, "<span class='" + highlightClass + "'>$1</span>");
+                            node.parentNode.insertBefore(tempNode, node);
+                            node.parentNode.removeChild(node);
+                        }
+                    }
+                    else if (node.nodeType === 1 && node.childNodes && !/(style|script)/i.test(node.tagName)) {
+                        $.each(node.childNodes, function (i, v) {
+                            helper.doHighlight(node.childNodes[i], searchTerm);
+                        });
+                    }
+                };
+                if (removePreviousHighlights) {
+                    $('.' + highlightClass).removeClass(highlightClass);     //Remove old search highlights
+                }
+
+                $.each($(selector).children(), function (index, val) {
+                    helper.doHighlight(this, searchTerm);
+                });
+                return matches;
+            }
+            return false;
+        }
+        $(document).ready(function () {
+            searchAndHighlight($('#txtKeyword').val(), 'body', 'highlighted', true);
+            $('#btnSearch').on("click", function () {
+                if (!searchAndHighlight($('#txtKeyword').val(), 'body', 'highlighted', true)) {
+                    alert("No results found");
+                }
+                return false;
+            });
+        });
+		//]]>
+</script>
+
+<noscript class="displayNone">This website uses Javascript</noscript>
+
+
+
+        </div>
+            
+    </div>
+</div>
+
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$hdnLanguageID" id="hdnLanguageID" value="1">
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$hdnSiteID" id="ContentPlaceHolder1_UserMenuHorizontalUpdate_hdnSiteID" value="1">
+<input type="hidden" name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$hdnInternalMEA" id="ContentPlaceHolder1_UserMenuHorizontalUpdate_hdnInternalMEA" value="0">
+
+
+          
+<script>
+    // var strHTML = '<input name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$txtKeyword" type="text" value="Search" id="txtKeyword" title="Search" class="form-control" style="width:18px;" />'
+    // + ' <input type="submit" name="ctl00$ContentPlaceHolder1$UserMenuHorizontalUpdate$btnSearch" value="Search" id="btnSearch" title="Minimum 3 character required" class="srcBtn fa fa-search" />'
+    // + ' <div class="searchGo displayNone">'
+    // + '  <span class="goBtnIcon toolTip" title="Click to Search" ></span></div>'
+    //// + '</asp:Panel>';
+    //var strHTML = "";
+    //strHTML = '<form class="search-form" method="post">'
+    //  +' <span class="search-form-icon">'
+    //     +'    <a class="fa fa-search"></a></span>'
+    //   +'   <input class="form-control" value="Search" name="custom_search" size="18" maxlength="174" type="text">'
+    //  +'  </form>';
+    //$(".relative").append(strHTML);
+
+
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+
+    function CheckString() {
+        var Key = document.getElementById('txtKeyword');
+         if (Key.value.length < 3) {
+             Key.value = "Minimum 3 character required";
+             return false;
+
+         }
+         if (Key.value == Key.defaultValue) {
+             Key.value = "Enter valid search text";
+             return false;
+         }
+
+         if (Key.value == "Minimum 3 character required" || Key.value == "Enter valid search text") {
+             return false;
+         }
+         return true;
+     }
+
+     var hdnLanguageID = document.getElementById('hdnLanguageID');
+    //    if (hdnLanguageID.value == '2') {
+    //        google.load("elements", "1", { packages: "transliteration" });
+    //        function onLoad() {
+    //            var options = { sourceLanguage: 'en', destinationLanguage: ['hi'], shortcutKey: 'ctrl+g', transliterationEnabled: true };
+    //            var control = new google.elements.transliteration.TransliterationControl(options);
+    //            control.makeTransliteratable(['ContentPlaceHolder1_KeywordSearch1_txtKeyword']);
+    //        }
+    //        google.setOnLoadCallback(onLoad);
+    //    }
+
+    /*  Auto Suggestion Script */
+    $(function () {
+
+        $("#ContentPlaceHolder1_KeywordSearch1_txtKeyword").autocomplete({
+            source: function (request, response) {
+                var pID;
+                var hdnSiteID = document.getElementById('ContentPlaceHolder1_UserMenuHorizontalUpdate_hdnSiteID');;
+                 var hdnLanguageID = document.getElementById('hdnLanguageID');
+                 if (hdnSiteID.value == '') pID = 1;
+                 else pID = hdnSiteID.value;
+                 $.ajax({
+                     url: "AutoCompleteService.asmx/AutoSugessionSiteSearch",
+                     data: "{ 'SearchText': '" + escape(request.term) + "' , 'SiteId':'" + pID + "', 'LanguageId':'" + document.getElementById('hdnLanguageID').value + "', 'TopRecords':'" + '10' + "' }",
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    dataFilter: function (data) { return data; },
+                    success: function (data) {
+                        response($.map(data.d, function (item) {
+                            var label1 = item.split("::");
+                            return {
+                                value: label1[1] + "::" + label1[2],
+                                label: label1[0]
+                            }
+                        }))
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        //  alert(textStatus);
+                    }
+                });
+             },
+             select: function (event, ui) {
+                 $(event.target).val(ui.item.label);
+                 var target = ui.item.value.split("::")
+                 if (target[1] == "_blank") {
+                     window.open(target[0], '_blank');
+                 }
+                 else {
+                     //window.location = ui.item.value;
+                     window.location = target[0];
+                 }
+                 return false;
+             },
+             minLength: 3
+         });
+         /*  Auto Suggestion Script */
+         //-->
+     });
+    function searchAndHighlight(searchTerm, selector, highlightClass, removePreviousHighlights) {
+
+        if (searchTerm) {
+
+            //var wholeWordOnly = new RegExp("\\g"+searchTerm+"\\g","ig"); //matches whole word only
+            //var anyCharacter = new RegExp("\\g["+searchTerm+"]\\g","ig"); //matches any word with any of search chars characters
+            var selector = selector || "body",                             //use body as selector if none provided
+        searchTermRegEx = new RegExp("(" + searchTerm + ")", "gi"),
+        matches = 0,
+        helper = {};
+            helper.doHighlight = function (node, searchTerm) {
+                if (node.nodeType === 3) {
+                    if (node.nodeValue.match(searchTermRegEx)) {
+                        matches++;
+                        var tempNode = document.createElement('span');
+                        tempNode.innerHTML = node.nodeValue.replace(searchTermRegEx, "<span class='" + highlightClass + "'>$1</span>");
+                        node.parentNode.insertBefore(tempNode, node);
+                        node.parentNode.removeChild(node);
+                    }
+                }
+                else if (node.nodeType === 1 && node.childNodes && !/(style|script)/i.test(node.tagName)) {
+                    $.each(node.childNodes, function (i, v) {
+                        helper.doHighlight(node.childNodes[i], searchTerm);
+                    });
+                }
+            };
+            if (removePreviousHighlights) {
+                $('.' + highlightClass).removeClass(highlightClass);     //Remove old search highlights
+            }
+
+            $.each($(selector).children(), function (index, val) {
+                helper.doHighlight(this, searchTerm);
+            });
+            return matches;
+        }
+        return false;
+    }
+    $(document).ready(function () {
+        searchAndHighlight($('#txtKeyword').val(), 'body', 'highlighted', true);
+        $('#btnSearch').on("click", function () {
+            if (!searchAndHighlight($('#txtKeyword').val(), 'body', 'highlighted', true)) {
+                alert("No results found");
+            }
+            return false;
+        });
+    });
+    //]]>
+</script>
+</div>
+</div>
+<div id="skipContent" class="middleContent">
+<div class="breadcrumbs">
+<div class="container">
+
+
+
+<ol class="breadcrumb">
+    <span id="ContentPlaceHolder1_BreadCrumbControl1_SiteMapPath1"><span>
+             <a class="homeBLink breadLink" href="https://dfpd.gov.in/index.htm" title="Home">Home</a>
+        </span><span>/</span><span>
+        	
+        	
+            	
+                    <span id="ContentPlaceHolder1_BreadCrumbControl1_SiteMapPath1_txtlabel_1" class="currentPage">Contact Us</span>
+                    
+       
+       
+       </span></span>
+</ol> 
+</div>
+</div>
+<div class="inner-page-wrap about-us">
+<div class="container">
+<div class="row">
+<div class="col-sm-8 col-md-9">
+<div class="contactUs">
+<div class="cf">
+<div class="address">
+<h2 class="headGray">Department of Food and Public Distribution</h2>
+<p>Ministry of Consumer Affairs, Food and Public Distribution<br>
+Department of Food &amp; PD <br>
+Krishi Bhawan, <br>
+New Delhi - 110001.<br>
+<br>
+</p>
+<ul class="bulletText">
+<li><a href="https://dfpd.gov.in/cabinetMinister_C.htm">Telephone &amp; E-Mail Directory</a></li></ul>
+</div>
+<div class="map">
+<div id="gmap" class="gmap3" style="width:500px; height:500px"></div>
+</div>
+</div>
+</div>
+ </div>
+<div class="col-sm-4 col-md-3">
+<div class="sidebar"><div id="ContentPlaceHolder1_UserLeftMiddleMenu1_LeftMenu" class="innerRightLinks"><h2>Contact Us</h2><ul id="menuLeft" class="pageLink"><li><a href="https://dfpd.gov.in/list-of-ministers.htm" target="_self" title="Telephone &amp; E-Mail Directory">Telephone &amp; E-Mail Directory</a><ul><li><a href="https://dfpd.gov.in/cabinetMinister_C.htm" target="_self" title="Hon`ble Minsiter Office">Hon'ble Minsiter Office</a></li><li><a href="https://dfpd.gov.in/mos_C.htm" target="_self" title="Hon`ble MOS Office">Hon'ble MOS Office</a></li><li><a href="https://dfpd.gov.in/secretaryFD_C.htm" target="_self" title="Secretary">Secretary</a></li><li><a href="https://dfpd.gov.in/finance-division.htm" target="_self" title="Finance">Finance</a></li><li><a href="https://dfpd.gov.in/sugar-sugar.htm" target="_self" title="Sugar &amp; Administration">Sugar &amp; Administration</a></li><li><a href="https://dfpd.gov.in/sra-impex-eop-ic.htm" target="_self" title="Impex &amp; IC">Impex &amp; IC</a></li><li><a href="https://dfpd.gov.in/policy-fci-movt-division.htm" target="_self" title="Policy &amp; FCI">Policy &amp; FCI</a></li><li><a href="https://dfpd.gov.in/Vigilance_New.htm" target="_self" title="Vigilance">Vigilance</a></li><li><a href="https://dfpd.gov.in/bp-pd-division.htm" target="_self" title="BP &amp; PD">BP &amp; PD</a></li><li><a href="https://dfpd.gov.in/storage-division.htm" target="_self" title="Storage &amp; PG">Storage &amp; PG</a></li><li><a href="https://dfpd.gov.in/Principal-Advisor.htm" target="_self" title="Principal Advisor">Principal Advisor</a></li><li><a href="https://dfpd.gov.in/economicAdvisor_C.htm" target="_self" title="Economic Advisor">Economic Advisor</a></li><li><a href="https://dfpd.gov.in/chief-controller-of-accounts.htm" target="_self" title="Chief Controller of Accounts">Chief Controller of Accounts</a></li><li><a href="https://dfpd.gov.in/payaccountsofficers_C.htm" target="_self" title="Pay and Accounts Officers">Pay and Accounts Officers</a></li><li><a href="https://dfpd.gov.in/miscellaneous-number.htm" target="_self" title="Miscellaneous">Miscellaneous</a></li><li><a href="https://dfpd.gov.in/public-sector-undertakings.htm" target="_self" title="Public Sector Undertakings">Public Sector Undertakings</a></li><li><a href="https://dfpd.gov.in/telephone-complaints.htm" target="_self" title="Telephone Complaints">Telephone Complaints</a></li><li><a href="https://dfpd.gov.in/cpwd.htm" target="_self" title="CPWD">CPWD</a></li><li><a href="https://dfpd.gov.in/directorate-of-sugar-veg-oils.htm" target="_self" title="Directorate of Sugar &amp; Vegetable Oils">Directorate of Sugar &amp; Vegetable Oils</a></li><li><a href="https://dfpd.gov.in/nic-computer-center.htm" target="_self" title="NIC">NIC</a></li></ul></li></ul> <br style="clear: left"></div> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="clientslogos">
+<div class="container">
+<div class="clients-carousal-box">
+<div class="owl-carousel owl-theme clientlogos-carousal owl-loaded">
+
+
+
+
+
+
+
+
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1120px, 0px, 0px); transition: all 0s ease 0s; width: 4256px;"><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://agricoop.nic.in/" target="_blank"><img src="./Contactus_files/dac.png" alt=""></a></div></div><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://goidirectory.nic.in/index.php" target="_blank"><img src="./Contactus_files/gwd.png" alt=""></a></div></div><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="https://www.india.gov.in/" target="_blank"><img src="./Contactus_files/india-gov.png" alt=""></a></div></div><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://agricoop.nic.in/" target="_blank"><img src="./Contactus_files/dac.png" alt=""></a></div></div><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://goidirectory.nic.in/index.php" target="_blank"><img src="./Contactus_files/gwd.png" alt=""></a></div></div><div class="owl-item active" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://igmri.dfpd.gov.in/igmri/" target="_blank"><img src="./Contactus_files/IGMRI_LOGO.png" alt=""></a></div></div><div class="owl-item active" style="width: 214px; margin-right: 10px;"><div class="item"><a href="https://www.mygov.in/" target="_blank"><img src="./Contactus_files/my-gov.png" alt=""></a></div></div><div class="owl-item active" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://www.fssai.gov.in/home" target="_blank"><img src="./Contactus_files/fssai.png" alt=""></a></div></div><div class="owl-item active" style="width: 214px; margin-right: 10px;"><div class="item"><a href="https://www.india.gov.in/" target="_blank"><img src="./Contactus_files/india-gov.png" alt=""></a></div></div><div class="owl-item active" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://agricoop.nic.in/" target="_blank"><img src="./Contactus_files/dac.png" alt=""></a></div></div><div class="owl-item" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://goidirectory.nic.in/index.php" target="_blank"><img src="./Contactus_files/gwd.png" alt=""></a></div></div><div class="owl-item" style="width: 214px; margin-right: 10px;"><div class="item"><a href="https://www.india.gov.in/" target="_blank"><img src="./Contactus_files/india-gov.png" alt=""></a></div></div><div class="owl-item" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://agricoop.nic.in/" target="_blank"><img src="./Contactus_files/dac.png" alt=""></a></div></div><div class="owl-item" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://goidirectory.nic.in/index.php" target="_blank"><img src="./Contactus_files/gwd.png" alt=""></a></div></div><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://igmri.dfpd.gov.in/igmri/" target="_blank"><img src="./Contactus_files/IGMRI_LOGO.png" alt=""></a></div></div><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="https://www.mygov.in/" target="_blank"><img src="./Contactus_files/my-gov.png" alt=""></a></div></div><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://www.fssai.gov.in/home" target="_blank"><img src="./Contactus_files/fssai.png" alt=""></a></div></div><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="https://www.india.gov.in/" target="_blank"><img src="./Contactus_files/india-gov.png" alt=""></a></div></div><div class="owl-item cloned" style="width: 214px; margin-right: 10px;"><div class="item"><a href="http://agricoop.nic.in/" target="_blank"><img src="./Contactus_files/dac.png" alt=""></a></div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="">prev</div><div class="owl-next" style="">next</div></div><div class="owl-dots" style="display: none;"></div></div></div>
+</div>
+</div>
+</div>
+
+<script src="./Contactus_files/jQuery.print.js(1).download" type="text/javascript"></script>
+<script type="text/javascript">
+    function printbox() {
+        var newWin = window.open('', 'Print-Window');
+        newWin.document.open();
+        newWin.document.write('<html><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/green.css"><body onload="window.print()">' + $(".printOuter").html() + '</body></html>');
+        newWin.document.close();
+        setTimeout(function () { newWin.close(); }, 10);
+    }
+</script>
+<div class="footer">
+    <div class="container">
+        <div class="top">
+            <ul>
+                <li><a href="https://dfpd.gov.in/terms-of-use.htm">Terms of Use</a></li>
+                <li><a href="https://dfpd.gov.in/accessibility-statement.htm">Accessibility Statement</a></li>
+                <li><a href="https://dfpd.gov.in/disclaimer.htm">Disclaimer</a></li>
+                <li><a href="https://dfpd.gov.in/privacy-policy.htm">Privacy Policy </a></li>
+                <li><a href="https://dfpd.gov.in/copyright-policy.htm">Copyright Policy </a></li>
+                <li><a href="https://dfpd.gov.in/hyperlinking-policy.htm">Hyper Linking Policy</a></li>
+                <li><a href="https://dfpd.gov.in/archives.htm">Archives</a></li>
+                <li><a href="https://dfpd.gov.in/help.htm">Help</a></li>
+                <li><a href="https://dfpd.gov.in/sitemap.htm">Sitemap </a></li>
+                <li><a href="https://dfpd.gov.in/parliament-question-answers.htm">Parliament Questions</a></li>
+                <li><a href="https://dfpd.gov.in/feedback.htm">Feedback</a></li>
+                <li><a href="http://lawmin.nic.in/ld/P-ACT/pact_upd2000-2014.htm">ICIS link	</a></li>
+                 <li><a href="http://pgportal.gov.in/" target="_blank">PG portal	</a></li>
+                 <li><a href="http://rtionline.gov.in/" target="_blank">Online RTI Portal	</a></li>
+
+
+
+
+
+
+                
+
+
+
+                <li><a href="https://dfpd.gov.in/contact.htm#" onclick="printbox()">Print</a></li>
+            </ul>
+        </div>
+        <!--close top-->
+
+
+
+    </div>
+
+    
+</div>
+
+<div class="footer">
+<div class="bottom">
+<div class="container">
+<p class="pull-left">© Owned by Department of Food and Public Distribution, Government of India.</p>
+<p class="img"><a href="https://dfpd.gov.in/contact.htm"><img src="./Contactus_files/cqw.png" alt=""></a><a href="https://dfpd.gov.in/contact.htm"><img src="./Contactus_files/w3c-html.png" alt=""></a><a href="https://dfpd.gov.in/contact.htm"><img src="./Contactus_files/w3c-css.png" alt=""></a></p>
+<p class="pull-right"><span id="ContentPlaceHolder1_UserHitCounter1_lblHitCount">Visitor Counter: <strong>6119160</strong></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" id="btnclose">×</button>
+                    <h4 class="modal-title">
+                        <span id="ContentPlaceHolder1_lblTitle"></span></h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        
+                        <tbody><tr>
+                            <td>
+                                <span id="ContentPlaceHolder1_lblmsg"></span>
+                            </td>
+                        </tr>
+                        
+                        
+                    </tbody></table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--<a accesskey="3" id="backtotop" title="Go to Navigation" href="#wrapper">Go to Navigation</a>-->
+    
+<script src="./Contactus_files/WebResource.axd" type="text/javascript"></script><noscript class="displayNone"> This website uses Javascript </noscript>
+</form>
+	<script src="./Contactus_files/jquery.prettyPhoto.js.download" type="text/javascript"></script><noscript class="displayNone">This website uses Javascript</noscript>
+    <script type="text/javascript" src="./Contactus_files/functions.js.download"></script><noscript class="displayNone">This website uses Javascript</noscript>
+	<script src="./Contactus_files/js" type="text/javascript"></script><noscript class="displayNone">This website uses Javascript</noscript>
+	<script type="text/javascript" src="./Contactus_files/jquery.fullscreenBackground.js.download"></script><noscript class="displayNone">This website uses Javascript</noscript>
+	<script type="text/javascript" src="./Contactus_files/general.js.download"></script><noscript class="displayNone">This website uses Javascript</noscript>
+	<!--<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4eccb53e3824a870"></script><noscript class="displayNone">This website uses Javascript</noscript>-->
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-57206497-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<noscript class="displayNone">This website uses Javascript</noscript>
+
+
+    <script>
+        $(document).ready(function () {
+
+
+            $('.prog-list a').click(function () {
+                if (!$(this).hasClass("active")) {
+                    var tabNum = $(this).parent('li').index();
+                    var nthChild = tabNum + 1;
+                    $(".prog-list li.active").removeClass("active");
+                    $(this).parent().addClass("active");
+                    $(".prog-detail> div").slideUp();
+                    //debugger;
+                    $(".prog-detail > div:nth-child(" + nthChild + ")").slideDown();
+                }
+            });
+
+            var owl = $('.banner-carousal');
+            owl.owlCarousel({
+                loop: true
+                , margin: 0
+                , navRewind: false
+                , nav: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                dots: true
+                , responsive: {
+                    0: {
+                        items: 1
+                    }
+                }
+
+            });
+
+            $('.play').on('click', function () {
+                owl.trigger('play.owl.autoplay', [5000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            })
+
+
+
+
+            $('.clientlogos-carousal').owlCarousel({
+                loop: true
+                , margin: 10
+                , navRewind: false
+                , nav: true
+                , dots: false
+                , responsive: {
+                    0: {
+                        items: 1
+                    }
+                    , 320: {
+                        items: 2
+                    }
+                    , 480: {
+                        items: 2
+                    }
+                    , 767: {
+                        items: 3
+                    }
+                    , 1024: {
+                        items: 4
+                    }
+                    , 1366: {
+                        items: 5
+                    }
+                }
+            });
+
+            $('.dropdown-menu').mouseover(function (e) {
+                $(this).prev('a.dropdown-toggle').addClass("hover");
+            });
+            $('.dropdown-menu').mouseout(function (e) {
+                $(this).prev('a.dropdown-toggle').removeClass("hover");
+            });
+
+        });
+
+
+        $(document).ready(function () {
+            $("input,textarea").change(function () {
+                // $(".org-input").find('textarea').change(function () {
+                var html = $(this).val();
+                html = html.replace(/(\<script)\s*[^\>]*\>([^\<]*\<\/script>)?/gi, "")
+                $(this).val(html);
+            });
+        });
+</script>
+
+
+</body></html>
